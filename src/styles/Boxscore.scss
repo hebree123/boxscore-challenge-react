@@ -1,0 +1,117 @@
+.boxscore {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 50px auto 20px;
+
+  // .boxscore__team
+  &__team {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    // .boxscore__team--header
+    &--header {
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    // .boxscore__team--home
+    &--home {
+      border-top: 1px solid #eee;
+    }
+
+    // .boxscore__team h4
+    h4 {
+      font-weight: bold;
+      position: absolute;
+    }
+
+    // .boxscore__team__units
+    &__units {
+      margin: 0 auto;
+      max-width: 50%;
+      padding-left: 4em;
+    }
+
+    // .boxscore__team__results
+    &__results {
+      max-width: 100px;
+    }
+
+    // .boxscore__team__result
+    // .boxscore__team__units
+    &__units,
+    &__results {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      min-width: 0;
+
+      // .boxscore__team__result span
+      // .boxscore__team__units span
+      span {
+        display: inline-block;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+
+        // .boxscore__team__result .right
+        &.right {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  // .boxscore__details
+  &__details {
+    align-items: center;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    // .boxscore__details__team
+    &__team {
+      // .boxscore__details__team--away
+      &--away {
+        text-align: right;
+      }
+
+      // .boxscore__details__team p
+      p {
+        margin: 0;
+        padding: 10px 0;
+
+        // .boxscore__details__team p strong
+        strong {
+          display: block;
+          text-transform: uppercase;
+        }
+
+        // .boxscore__details__team p small
+        small {
+          color: #999;
+        }
+      }
+    }
+
+    // .boxscore__details__info
+    &__info {
+      text-align: center;
+
+      // .boxscore__details__info strong
+      strong {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

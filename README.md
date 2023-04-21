@@ -6,15 +6,17 @@ This project contains a reusable Boxscore React component that displays sports g
 
 ## Installation
 
-1. Clone this repository to your local machine.
+1. Clone and setup the Node server for this React application ([can be found here](https://github.com/hebree123/boxscore-challenge-server))
+
+2. Clone this repository to your local machine.
 
 ```
 gh repo clone hebree123/boxscore-challenge-react
 ```
 
-2. Install the necessary dependencies by running `npm install` or `yarn install` in the project directory.
+3. Install the necessary dependencies by running `npm install` or `yarn install` in the project directory.
 
-3. Run the React component:
+4. Run the React component:
 
 ```
 npm run start
